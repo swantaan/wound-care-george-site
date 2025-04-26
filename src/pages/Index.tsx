@@ -135,13 +135,22 @@ export default function Index() {
           <div className="relative w-full">
             <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 items-center px-4 -mx-4 md:mx-0 md:overflow-visible">
               <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
-                <img src="/photo-1487958449943-2429e8be8625" alt="Clinic exterior" className="w-full h-64 object-cover" />
+                <img src="/2.jpg" alt="Clinic exterior" className="w-full h-64 object-cover" />
               </Card>
               <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
-                <img src="/photo-1518005020951-eccb494ad742" alt="Treatment room" className="w-full h-64 object-cover" />
+                <img src="/1.jpg" alt="Treatment room" className="w-full h-64 object-cover" />
               </Card>
               <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
-                <img src="/photo-1460574283810-2aab119d8511" alt="Facility entrance" className="w-full h-64 object-cover" />
+                <img src="/3.jpg" alt="Facility entrance" className="w-full h-64 object-cover" />
+              </Card>
+              <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
+                <img src="/4.jpg" alt="Treatment equipment" className="w-full h-64 object-cover" />
+              </Card>
+              <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
+                <img src="/5.jpg" alt="Consultation room" className="w-full h-64 object-cover" />
+              </Card>
+              <Card className="overflow-hidden flex-shrink-0 w-[80vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-white">
+                <img src="/6.jpg" alt="Consultation room" className="w-full h-64 object-cover" />
               </Card>
             </div>
             

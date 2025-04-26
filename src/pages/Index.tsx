@@ -1,4 +1,3 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Reviews } from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
@@ -13,7 +12,6 @@ export default function Index() {
       <section className="pt-24 pb-12 bg-gradient-to-br from-brand/10 to-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
-            
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Professional Wound Care Services
             </h1>
@@ -21,7 +19,8 @@ export default function Index() {
               Specialized wound care treatment and management in George, Western Cape
             </p>
             <Button size="lg" className="bg-brand hover:bg-brand-dark">
-              Book an Appointment
+              <Phone className="mr-2 h-4 w-4" />
+              044 874 0377
             </Button>
           </div>
         </div>
@@ -31,8 +30,8 @@ export default function Index() {
       <section id="services" className="py-16">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <Card className="border-none shadow-lg">
+          <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-4 md:pb-0 snap-x snap-mandatory">
+            <Card className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center">
                   <Stethoscope className="w-12 h-12 text-brand mb-4" />
@@ -43,7 +42,7 @@ export default function Index() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="border-none shadow-lg">
+            <Card className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center">
                   <Bandage className="w-12 h-12 text-brand mb-4" />
@@ -54,7 +53,7 @@ export default function Index() {
                 </div>
               </CardContent>
             </Card>
-            <Card className="border-none shadow-lg">
+            <Card className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center">
                   <HeartPulse className="w-12 h-12 text-brand mb-4" />

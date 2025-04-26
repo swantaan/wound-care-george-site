@@ -2,7 +2,7 @@ import { Navigation } from "@/components/Navigation";
 import { Reviews } from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, MessageSquare, Stethoscope, Bandage, HeartPulse } from 'lucide-react';
+import { MapPin, Phone, Mail, Stethoscope, Bandage, HeartPulse } from 'lucide-react';
 
 export default function Index() {
   return <div className="min-h-screen">
@@ -72,14 +72,14 @@ export default function Index() {
       <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Facility</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="overflow-hidden">
+          <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-8 md:pb-0 snap-x snap-mandatory">
+            <Card className="overflow-hidden flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <img src="/photo-1487958449943-2429e8be8625" alt="Clinic exterior" className="w-full h-64 object-cover" />
             </Card>
-            <Card className="overflow-hidden">
+            <Card className="overflow-hidden flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <img src="/photo-1518005020951-eccb494ad742" alt="Treatment room" className="w-full h-64 object-cover" />
             </Card>
-            <Card className="overflow-hidden md:col-span-2 lg:col-span-1">
+            <Card className="overflow-hidden flex-shrink-0 w-[85vw] md:w-auto snap-center">
               <img src="/photo-1460574283810-2aab119d8511" alt="Facility entrance" className="w-full h-64 object-cover" />
             </Card>
           </div>
@@ -110,6 +110,7 @@ export default function Index() {
         </div>
       </section>
 
+      {/* Reviews Section */}
       <Reviews />
 
       {/* Contact Section */}

@@ -3,7 +3,7 @@ import { Navigation } from "@/components/Navigation";
 import { Reviews } from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, MessageSquare, Stethoscope, BandAid, HeartPulse } from 'lucide-react';
+import { MapPin, Phone, Mail, MessageSquare, Stethoscope, Bandage, HeartPulse } from 'lucide-react';
 
 export default function Index() {
   return <div className="min-h-screen">
@@ -46,7 +46,7 @@ export default function Index() {
             <Card className="border-none shadow-lg">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center">
-                  <BandAid className="w-12 h-12 text-brand mb-4" />
+                  <Bandage className="w-12 h-12 text-brand mb-4" />
                   <h3 className="text-xl font-semibold mb-4">Wound Treatment</h3>
                   <p className="text-gray-600 text-center">
                     Specialized care and treatment for acute and chronic wounds using advanced medical techniques. We provide personalized treatment plans tailored to each patient's needs.

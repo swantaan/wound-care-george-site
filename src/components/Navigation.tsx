@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Building } from 'lucide-react';
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +23,9 @@ export function Navigation() {
           <div className="hidden md:flex items-center space-x-8">
             <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-brand">
               Services
+            </button>
+            <button onClick={() => scrollToSection('facility')} className="text-gray-700 hover:text-brand">
+              Our Facility
             </button>
             <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-brand">
               Contact
@@ -51,6 +54,9 @@ export function Navigation() {
             <div className="flex flex-col space-y-4">
               <button onClick={() => scrollToSection('services')} className="text-gray-700 hover:text-brand">
                 Services
+              </button>
+              <button onClick={() => scrollToSection('facility')} className="text-gray-700 hover:text-brand">
+                Our Facility
               </button>
               <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-brand">
                 Contact

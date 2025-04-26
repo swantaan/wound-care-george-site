@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Phone, Building } from 'lucide-react';
@@ -30,10 +29,12 @@ export function Navigation() {
             <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-brand">
               Contact
             </button>
-            <Button variant="default" className="bg-brand hover:bg-brand-dark">
-              <Phone className="mr-2 h-4 w-4" />
-              044 874 0377
-            </Button>
+            <a href="tel:0448740377">
+              <Button variant="default" className="bg-brand hover:bg-brand-dark">
+                <Phone className="mr-2 h-4 w-4" />
+                044 874 0377
+              </Button>
+            </a>
           </div>
 
           <div className="md:hidden">
@@ -61,10 +62,14 @@ export function Navigation() {
               <button onClick={() => scrollToSection('contact')} className="text-gray-700 hover:text-brand">
                 Contact
               </button>
-              <Button variant="default" className="bg-brand hover:bg-brand-dark">
-                <Phone className="mr-2 h-4 w-4" />
-                044 874 0377
-              </Button>
+              <div className="flex justify-center">
+                <a href="tel:0441100725">
+                  <Button variant="default" className="bg-brand hover:bg-brand-dark">
+                    <Phone className="mr-2 h-4 w-4" />
+                    044 1100 725
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         )}

@@ -4,18 +4,18 @@ import { Card, CardContent } from "@/components/ui/card";
 export function Reviews() {
   const reviews = [
     {
-      name: "Sarah Johnson",
-      review: "Exceptional wound care service. The staff is professional and caring. They helped me recover quickly from a complicated injury.",
+      name: "Charlene Von Regenstein",
+      review: "Helpful, friendly and great service provided. Thank you!",
       rating: 5
     },
     {
-      name: "Michael Peters",
-      review: "Very professional clinic with modern facilities. The wound care specialists are knowledgeable and attentive.",
+      name: "Laurie Pool",
+      review: "Wonderful care and professional service",
       rating: 5
     },
     {
-      name: "Emma Thompson",
-      review: "Outstanding service and follow-up care. The team is dedicated to ensuring proper healing. Highly recommended!",
+      name: "Marina Greef",
+      review: "",
       rating: 5
     }
   ];

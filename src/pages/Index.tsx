@@ -1,24 +1,17 @@
-
 import { Navigation } from "@/components/Navigation";
 import { Reviews } from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Phone, Mail, MessageSquare } from 'lucide-react';
-
 export default function Index() {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navigation />
       
       {/* Hero Section */}
       <section className="pt-24 pb-12 bg-gradient-to-br from-brand/10 to-transparent">
         <div className="container mx-auto px-4">
           <div className="flex flex-col items-center text-center">
-            <img 
-              src="/lovable-uploads/ce40edd0-1681-40ff-a00d-803cba1c767c.png" 
-              alt="Wound Clinic George Logo" 
-              className="h-32 mb-8"
-            />
+            
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Professional Wound Care Services
             </h1>
@@ -102,19 +95,12 @@ export default function Index() {
             </div>
             
             <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
-              <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.794083暫無!2d22.4535!3d-33.9561596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dd6054875f255c9%3A0xf7d78f06a7f2de96!2sWOUND%20CLINIC%20GEORGE!5e0!3m2!1sen!2s!4v1682444800000!5m2!1sen!2s"
-                width="100%" 
-                height="100%" 
-                style={{ border: 0 }} 
-                allowFullScreen 
-                loading="lazy" 
-                referrerPolicy="no-referrer-when-downgrade"
-              />
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3308.794083暫無!2d22.4535!3d-33.9561596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dd6054875f255c9%3A0xf7d78f06a7f2de96!2sWOUND%20CLINIC%20GEORGE!5e0!3m2!1sen!2s!4v1682444800000!5m2!1sen!2s" width="100%" height="100%" style={{
+              border: 0
+            }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade" />
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 }

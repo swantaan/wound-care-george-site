@@ -196,16 +196,16 @@ export default function Index() {
                     <h3 className="text-xl font-semibold mb-4">Visit Us</h3>
                     <div className="space-y-4">
                       <p className="flex items-center text-gray-600">
-                        <MapPin className="mr-2 text-brand" />
-                        17 Gloucester Ave, George Central, George, Western Cape
+                        <MapPin className="mr-2 flex-shrink-0 text-brand" />
+                        <span className="break-words">17 Gloucester Ave, George Central, George, Western Cape</span>
                       </p>
                       <p className="flex items-center text-gray-600">
-                        <Phone className="mr-2 text-brand" />
-                        044 110 0725
+                        <Phone className="mr-2 flex-shrink-0 text-brand" />
+                        <span className="break-words">044 110 0725</span>
                       </p>
                       <p className="flex items-center text-gray-600">
-                        <Mail className="mr-2 text-brand" />
-                          georgewoundclinic@gmail.com
+                        <Mail className="mr-2 flex-shrink-0 text-brand" />
+                        <span className="break-all">georgewoundclinic@gmail.com</span>
                       </p>
                     </div>
                   </div>
@@ -214,8 +214,9 @@ export default function Index() {
                     <h3 className="text-xl font-semibold mb-4">Business Hours</h3>
                     <div className="space-y-2 text-gray-600">
                       <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
-                      <p>Saturday: 9:00 AM - 1:00 PM</p>
+                      <p>Saturday: Closed</p>
                       <p>Sunday: Closed</p>
+                      <p>Public Holidays: Closed</p>
                     </div>
                   </div>
                 </div>

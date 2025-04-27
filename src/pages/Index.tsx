@@ -136,7 +136,7 @@ export default function Index() {
                   <CardContent className="pt-6 h-full">
                     <div className="flex flex-col items-center h-full">
                       <Home className="w-12 h-12 text-brand mb-4" />
-                      <h3 className="text-xl font-semibold mb-4">Home Visits</h3>
+                      <h3 className="text-xl font-semibold mb-4">Visits</h3>
                       <p className="text-gray-600 text-center">
                       Home visits are restricted to patients that can not come to the clinic in the George Municipal area. We visit patients at the frail care facilities in George.
                       </p>

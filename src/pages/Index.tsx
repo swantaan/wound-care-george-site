@@ -2,12 +2,12 @@ import { Navigation } from "@/components/Navigation";
 import { Reviews } from "@/components/Reviews";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Phone, Mail, Stethoscope, Bandage, HeartPulse, CreditCard } from 'lucide-react';
+import { MapPin, Phone, Mail, Stethoscope, Bandage, HeartPulse, CreditCard, Users, Home } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 export default function Index() {
   const [activeCard, setActiveCard] = useState(0);
-  const cardRefs = [useRef(null), useRef(null), useRef(null)];
+  const cardRefs = [useRef(null), useRef(null), useRef(null), useRef(null), useRef(null)];
 
   useEffect(() => {
     const observers = cardRefs.map((ref, index) => {
@@ -67,55 +67,88 @@ export default function Index() {
           <h2 className="text-3xl font-bold text-center mb-12">Our Services</h2>
           <div className="relative w-full">
             {/* Mobile scroll indicator */}
-            <div className="flex items-center justify-center gap-2 mb-6 md:hidden">
+            <div className="flex items-center justify-center gap-2 mb-6">
               <span className="text-gray-500">←</span>
               <span className="text-sm text-gray-500">Swipe to see more services</span>
               <span className="text-gray-500">→</span>
             </div>
             
-            <div className="flex md:grid md:grid-cols-3 gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 items-stretch px-4 -mx-4 md:mx-0 md:overflow-visible">
-              <Card ref={cardRefs[0]} className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-gray-50 relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <CardContent className="pt-6 h-full">
-                  <div className="flex flex-col items-center h-full">
-                    <Stethoscope className="w-12 h-12 text-brand mb-4" />
-                    <h3 className="text-xl font-semibold mb-4">Wound Care</h3>
-                    <p className="text-gray-600 text-center">
-                      We treat chronic wounds, acute injuries, lower leg ulcers, burns, surgical sites, complicated wounds, and trauma for patients of all ages.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card ref={cardRefs[1]} className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-gray-50 relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <CardContent className="pt-6 h-full">
-                  <div className="flex flex-col items-center h-full">
-                    <CreditCard className="w-12 h-12 text-brand mb-4" />
-                    <h3 className="text-xl font-semibold mb-4">Medical Aid and Payments</h3>
-                    <p className="text-gray-600 text-center">
-                      We are registered with most medical aids and will submit a plan to obtain wound care authorisation.
-                      If you don't have medical aid, we'll gladly help you explore private options.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-              <Card ref={cardRefs[2]} className="border-none shadow-lg flex-shrink-0 w-[85vw] md:w-full snap-center hover:scale-[1.02] transition-transform bg-gray-50 relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <CardContent className="pt-6 h-full">
-                  <div className="flex flex-col items-center h-full">
-                    <HeartPulse className="w-12 h-12 text-brand mb-4" />
-                    <h3 className="text-xl font-semibold mb-4">Follow-up Care</h3>
-                    <p className="text-gray-600 text-center">
-                      Continuous monitoring and adjustment of treatment plans to ensure optimal healing outcomes. Regular check-ups and progress tracking for best results.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
+            <div className="flex gap-8 overflow-x-auto pb-8 snap-x snap-mandatory scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 items-stretch px-4 -mx-4">
+              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
+                <Card ref={cardRefs[0]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="pt-6 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Stethoscope className="w-12 h-12 text-brand mb-4" />
+                      <h3 className="text-xl font-semibold mb-4">Wound Management</h3>
+                      <p className="text-gray-600 text-center">
+                      We provide cost effective treatment of various wound types eg. chronic wounds, non healing wounds, ulcerative wounds, burn wounds, post operative wounds, minor trauma wounds, pressure injuries and fungating wounds. During the initial visit a comprehensive assessment are done to identify your specific individual needs.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
+                <Card ref={cardRefs[1]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="pt-6 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Bandage className="w-12 h-12 text-brand mb-4" />
+                      <h3 className="text-xl font-semibold mb-4">Dressings & Treatments</h3>
+                      <p className="text-gray-600 text-center">
+                      To provide the best environment for wound healing we select the most appropriate combination of dressings types during the treatment sessions eg. hydrocolloids, hydrogels, alginates, collagen, transparent dressing ect. We evaluate and review the progress with each session with photograhs and measurements. We have a multidisciplinary approach and refer to the appropriate team member to enhance wound healing.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
+                <Card ref={cardRefs[2]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="pt-6 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <CreditCard className="w-12 h-12 text-brand mb-4" />
+                      <h3 className="text-xl font-semibold mb-4">Medical Aid</h3>
+                      <p className="text-gray-600 text-center">
+                      We deal with all major medical aids and submit medical claims. Payment will be according to the specific protocol and criteria of the medical aid plans. We do apply for special authorisation for the wound management if you need longer term wound management.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
+                <Card ref={cardRefs[3]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="pt-6 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Users className="w-12 h-12 text-brand mb-4" />
+                      <h3 className="text-xl font-semibold mb-4">Support</h3>
+                      <p className="text-gray-600 text-center">
+                      We believe that the care team plays an important role in the healing of the wound and welcomes them to learn how to support the patient.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
+                <Card ref={cardRefs[4]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                  <CardContent className="pt-6 h-full">
+                    <div className="flex flex-col items-center h-full">
+                      <Home className="w-12 h-12 text-brand mb-4" />
+                      <h3 className="text-xl font-semibold mb-4">Home Visits</h3>
+                      <p className="text-gray-600 text-center">
+                      Home visits are restricted to patients that can not come to the clinic in the George Municipal area. We visit patients at the frail care facilities in George.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
 
             {/* Scroll progress dots (mobile only) */}
-            <div className="flex justify-center gap-2 mt-4 md:hidden">
-              {[0, 1, 2].map((index) => (
+            <div className="flex justify-center gap-2 mt-4">
+              {[0, 1, 2, 3, 4].map((index) => (
                 <div
                   key={index}
                   className={`w-2 h-2 rounded-full transition-colors ${

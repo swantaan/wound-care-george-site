@@ -108,9 +108,9 @@ export default function Index() {
                   <CardContent className="pt-6 h-full">
                     <div className="flex flex-col items-center h-full">
                       <CreditCard className="w-12 h-12 text-brand mb-4" />
-                      <h3 className="text-xl font-semibold mb-4">Medical Aid</h3>
+                      <h3 className="text-xl font-semibold mb-4">Medical Aid & Documentation</h3>
                       <p className="text-gray-600 text-center">
-                      We deal with all major medical aids and submit medical claims. Payment will be according to the specific protocol and criteria of the medical aid plans. We do apply for special authorisation for the wound management if you need longer term wound management.
+                      Our office can be contacted to obtain an online registration form that can be submitted easily. We deal with all major medical aids and submit medical claims directly.  Payments by the medical aid are made according to the specific rules of the medical aid plans. We can apply for authorisation for wound management if you need wound management for a longer period.  Authorisations are given according to the protocols and criteria of the medical aid funds. 
                       </p>
                     </div>
                   </CardContent>
@@ -124,21 +124,7 @@ export default function Index() {
                       <Users className="w-12 h-12 text-brand mb-4" />
                       <h3 className="text-xl font-semibold mb-4">Support</h3>
                       <p className="text-gray-600 text-center">
-                      We believe that the care team plays an important role in the healing of the wound and welcomes them to learn how to support the patient.
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              </div>
-              <div className="flex-shrink-0 w-full max-w-[90vw] md:max-w-[600px] snap-center">
-                <Card ref={cardRefs[4]} className="border-none shadow-lg h-full hover:scale-[1.02] transition-transform bg-gray-50 relative group">
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-brand/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-                  <CardContent className="pt-6 h-full">
-                    <div className="flex flex-col items-center h-full">
-                      <Home className="w-12 h-12 text-brand mb-4" />
-                      <h3 className="text-xl font-semibold mb-4">Visits</h3>
-                      <p className="text-gray-600 text-center">
-                      Home visits are restricted to patients that can not come to the clinic in the George Municipal area. We visit patients at the frail care facilities in George.
+                      Appointments can be made for consultation and treatment at the clinic. Home visits are reserved for patients that cannot come to the clinic in the George Municipal area. We can schedule  visits of patients at the frail care facilities in George. We understand that members of the family, as well as the medical care team, plays an important role in the healing of the wound. We try to involve them when it is indicated to help the patient during the healing process. We see each patient as a whole and try to meet al needs and refer them if necessary to appropriate resources.
                       </p>
                     </div>
                   </CardContent>

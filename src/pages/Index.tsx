@@ -48,8 +48,11 @@ export default function Index() {
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
               Professional Wound Care Services
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-2xl">
-              Specialized wound treatment and management in George
+            <p className="text-xl text-gray-600 mb-2 max-w-2xl">
+              Specialised wound treatment in George
+            </p>
+            <p className="text-sm text-gray-400 mb-8">
+              Practice number: 0272779
             </p>
             <a href="tel:0441100725">
               <Button className="bg-brand hover:bg-brand-dark">

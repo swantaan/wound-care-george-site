@@ -16,7 +16,7 @@ export function Navigation() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <img src="/lovable-uploads/ce40edd0-1681-40ff-a00d-803cba1c767c.png" alt="Wound Clinic George Logo" className="h-12" />
+            <img src="logo.png" alt="Wound Clinic George Logo" className="h-12" />
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

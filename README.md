@@ -32,9 +32,3 @@ npm run build
 ```sh
 npm run preview
 ```
-
-## Contributing
-Contributions are welcome! Please open issues or pull requests for improvements or bug fixes.
-
-## License
-[MIT](LICENSE)
